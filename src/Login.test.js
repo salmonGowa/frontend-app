@@ -2,7 +2,7 @@ import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import { useNavigate } from "react-router-dom";
 import { signInWithPopup } from "firebase/auth";
-import LoginPage from "./LoginPage";
+import LoginPage from "./components/LoginPage";
 
 jest.mock("firebase/auth", () => ({
   signInWithPopup: jest.fn(),
